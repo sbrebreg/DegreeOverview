@@ -63,14 +63,20 @@ body {
     padding-top: 70px;
 }
 
+/*Login Background image*/
 .login {
     background-image: url('../img/banner4.jpg');
     background-size: cover;
 }
 
+/* Background Internal Site Content*/
 .bodyint {
     background-image: url('../img/banner4.jpg');
     background-size: cover
+}
+
+.detail {
+    font-weight: bold;
 }
 
 /* ==========================================================================
@@ -113,8 +119,9 @@ h4 {
 }
 
 h5 {
-    font-size: 0.83em;
-    margin: 1.67em 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0.5em 0;
 }
 
 h6 {
