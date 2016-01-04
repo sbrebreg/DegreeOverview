@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit course data</title>
+<meta charset="UTF-8" />
+<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="js/agility.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="js/themes/base/jquery.ui.all.css">
+<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="stylesheets/demos.css">
+</head>
+
+<body>
+	<div id="contentArea"></div>
+	<script id="editCourse" type="text/html">
+		<table>
+			<tr>
+			 <td>Id:</td>
+             <td><span data-bind="id" /></tr>
+			</tr>
+			<tr>
+			 <td>Title:</td>
+             <td><input data-bind="title" type="text" name="title" /></tr>
+			</tr>
+			<tr>
+			  <td>Amount of ECTS:</td>
+              <td><input data-bind="ects" type="text" name="ects" /></td>
+			</tr>
+            <tr>
+			  <td colspan="2"><input id='save' type="button" value="Save"  /></td>
+			</tr>
+		</table>
+	</script>
+	<script id="courseList" type="text/html">
+		<div>
+		  <table id="userTab" style="background-color:lightgray;">
+			<th>Id</th>
+			<th>Title</th>
+			<th>ECTS</th>
+			<th></th>
+			<th></th>
+		  </table>
+		  <a id="new" href="javascript:">Add course</a>
+		  <div id="dialog-confirm" title="Löschen" style="visibility:hidden;">
+			<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;">
+             </span>
+              Delete this course?
+            </p>
+		  </div>
+		</div>
+	</script>
+	<script id="courseListEntry" type="text/html">
+		<tr>
+			<td><span data-bind="id" /></td>
+			<td><span data-bind="title" /></td>
+			<td><span data-bind="ects" /></td>
+			<td><a id="edit" href="javascript:">Bearbeiten</a></td>
+			<td><a id="delete" href="javascript:">Löschen</a></td>
+		</tr>
+	</script>
+	<script type="text/javascript">
+		var editCourse;
+
+		var courseList = $$({
+			model : {},
+			view : {
+				format : $("#courseList").html()
+			},
+			controller : {
+				'create' : function() {
+					// Add JQueryUI widgets
+					this.view.$("input[type=button], a, button").button()
+							.click(function(event) {
+								event.preventDefault();
+							});
+				},
+				'click #new' : function() {
+					var edit = $$(editCourse, {
+						id : '',
+						title : '',
+						ects : ''
+					});
+					this.destroy();
+					$$.document.append(edit, '#contentArea');
+				}
+			}
+		});
+		courseList.persist();
+
+		var listEntry = $$({
+			model : {},
+			view : {
+				format : $("#courseListEntry").html()
+			},
+			controller : {
+				'create' : function() {
+					// Add JQueryUI widgets
+					this.view.$("input[type=button], a, button").button()
+							.click(function(event) {
+								event.preventDefault();
+							});
+				},
+				'click #edit' : function() {
+					var _this = this;
+					var edit = $$(editCourse, {
+						id : _this.model.get('id'),
+						title : _this.model.get('title'),
+						ects : _this.model.get('ects')
+					});
+					this.parent().destroy();
+					$$.document.append(edit, '#contentArea');
+				},
+				'click #delete' : function() {
+					var _this = this;
+					$(function() {
+						document.getElementById('dialog-confirm').style.visibility='visible';
+						$("#dialog-confirm").dialog({
+							resizable : false,
+							height : 140,
+							modal : true,
+							buttons : {
+								"Löschen" : function() {
+									_this.erase();
+									$(this).dialog("close");									
+								},
+								Cancel : function() {
+									$(this).dialog("close");
+								}
+							}
+						});
+					});
+				},
+				'persist:erase:success' : function() {
+					var _this = this;
+					var anzeige = $$(courseList);
+					this.parent().destroy();
+					$$.document.append(anzeige, '#contentArea');
+					anzeige.gather(listEntry, 'append', '#userTab');
+				}
+			}
+		});
+		listEntry.persist($$.adapter.restful, {
+			baseUrl : 'services/',
+			collection : 'courses'
+		});
+
+		editCourse = $$({
+			model : {
+				id : '',
+				title : '',
+				ects : ''
+			},
+			view : {
+				format : $("#editCourse").html()
+			},
+			controller : {
+				'create' : function() {
+					// Add JQueryUI widgets
+					this.view.$("input[type=button], a, button").button()
+							.click(function(event) {
+								event.preventDefault();
+							});
+				},
+				'click #save' : function() {
+					this.save();
+				},
+				'persist:save:success' : function() {
+					var _this = this;
+					var anzeige = $$(courseList);
+					this.destroy();
+					$$.document.append(anzeige, '#contentArea');
+					anzeige.gather(listEntry, 'append', '#userTab');
+				}
+			}
+		});
+		editCourse.persist($$.adapter.restful, {
+			baseUrl : 'services/',
+			collection : 'courses'
+		});
+
+		$$.document.append(courseList, '#contentArea');
+		courseList.gather(listEntry, 'append', '#userTab');
+	</script>
+</body>
+</html>
