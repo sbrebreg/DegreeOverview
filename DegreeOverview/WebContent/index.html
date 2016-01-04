@@ -20,7 +20,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="top">
+<body id="top" class="bodyint">
 
 <!-- Header Start -->
 
@@ -29,7 +29,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
+            <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -37,8 +37,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#home"> <img src="img/Logo2.png" class="img-responsive"
-                                                                       alt=""></a>
+                <a class="navbar-brand" href="#home"> <img src="img/Logo2.png" class="img-responsive"
+                                                           alt=""></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,17 +47,24 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-
                     <li>
-                        <a class="page-scroll" href="#features">Features</a>
+                        <a href="#features">Overview</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#dashboard">Dashboard</a>
+                        <a href="allCourses.html">All Courses</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a href="myCourses.html">My Courses</a>
                     </li>
-                 </ul>
+                    <li><a data-toggle="dropdown" href="#" class="dropdown-toggle">My Profile</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="myProfile.html"><i class="fa fa-cog"></i> Profile</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i> Inbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="landing.html"><i class="fa fa-power-off"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -69,39 +76,9 @@
     </section>
 </header>
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <ul class="legals">
-                    <li><a href="#">Impressum</a></li>
-                    <li><a href="#">AGB</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6 credit">
-                <p></p>
-            </div>
-        </div>
-    </div>
-</footer>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/waypoints.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
-<script src="js/modernizr.js"></script>
-<script src="js/login.js"></script>
-<script type="text/javascript">
-    $('#exampleModal').on('show.bs.modal', function (event) {
-        var button = $(event.relatedTarget) // Button that triggered the modal
-        var recipient = button.data('whatever') // Extract info from data-* attributes
-        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-        var modal = $(this)
-        modal.find('.modal-title').text('New message to ' + recipient)
-        modal.find('.modal-body input').val(recipient)
-    })
-</script>
 </body>
 </html>
