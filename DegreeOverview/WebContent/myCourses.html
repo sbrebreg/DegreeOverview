@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Degree Overview</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <!--<link href="css/login.css" rel="stylesheet">-->
+    <link href="css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="css/bootstrap-toggle.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="top" class="bodyint">
+
+<!-- Header Start -->
+
+<header id="home">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home"> <img src="img/Logo2.png" class="img-responsive"
+                                                           alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="index.html">Overview</a>
+                    </li>
+                    <li>
+                        <a href="allCourses.html" class="active">All Courses</a>
+                    </li>
+                    <li>
+                        <a href="myCourses.html">My Courses</a>
+                    </li>
+                    <li><a data-toggle="dropdown" href="#" class="dropdown-toggle">My Profile</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="myProfile.html"><i class="fa fa-cog"></i> Profile</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i> Inbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="landing.html"><i class="fa fa-power-off"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <section>
+    </section>
+</header>
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                <h4 class="modal-title">Course Details</h4>
+            </div>
+            <div class="modal-body">
+                <p class="p2">Business Studies I.</p>
+
+                <p class="p2">5 ECTS</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container sitecontent col-md-offset-1 col-md-10">
+    <div class="row" id="caption">
+        <div class="col-md-4">
+            <h1>Your Personal Courses</h1>
+        </div>
+    </div>
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#current"><i class="fa fa-edit"></i> Current Courses</a></li>
+        <li><a data-toggle="tab" href="#done"><i class="fa fa-check-square-o"></i> Completed Courses</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="current" class="tab-pane fade in active">
+            <div class="col-md-12">
+                <table id="currenttable" class="table table-bordered hover" cellspacing="0" width="100%">
+                    <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Lecturer</th>
+                        <th>ECTS</th>
+                        <th>Time</th>
+                        <th>Registered</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Project Management</td>
+                        <td>Prof. Dr. Dehnert</td>
+                        <td>5</td>
+                        <td>Tuesday 10.00-12.50</td>
+                        <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
+                                   type="checkbox"></td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Business Studies I</td>
+                        <td>Prof. Dr. Grieble</td>
+                        <td>4</td>
+                        <td>Monday 09.00-11.30</td>
+                        <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
+                                   type="checkbox"></td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Business Studies II</td>
+                        <td>Prof. Dr. Maier</td>
+                        <td>4</td>
+                        <td>Friday 08.30-11.30</td>
+                        <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
+                                   type="checkbox"></td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marketing I</td>
+                        <td>Prof. Gory</td>
+                        <td>8</td>
+                        <td>Thursday 15.00-17.30</td>
+                        <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
+                                   type="checkbox"></td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marketing II</td>
+                        <td>Prof. Dr. Gernold</td>
+                        <td>5</td>
+                        <td>Monday 14.00-15.15</td>
+                        <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
+                                   type="checkbox"></td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Maths I</td>
+                        <td>Prof. Dr. Gernold</td>
+                        <td>5</td>
+                        <td>Thursday 14.00-15.15</td>
+                        <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
+                                   type="checkbox"></td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="done" class="tab-pane fade">
+            <div class="col-md-12">
+                <table id="donetable" class="table table-bordered hover" cellspacing="0" width="100%">
+                    <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Lecturer</th>
+                        <th>ECTS</th>
+                        <th>Grade</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Project Management</td>
+                        <td>Prof. Dr. Dehnert</td>
+                        <td>5</td>
+                        <td>1.7</td>
+                    </tr>
+                    <tr>
+                        <td>Business Studies I</td>
+                        <td>Prof. Dr. Grieble</td>
+                        <td>4</td>
+                        <td>2.3</td>
+                    </tr>
+                    <tr>
+                        <td>Business Studies I</td>
+                        <td>Prof. Dr. Maier</td>
+                        <td>4</td>
+                        <td>4.0</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing I</td>
+                        <td>Prof. Gory</td>
+                        <td>8</td>
+                        <td>3.7</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing II</td>
+                        <td>Prof. Dr. Gernold</td>
+                        <td>5</td>
+                        <td>3.0</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/dataTables.bootstrap.min.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script srC="js/bootstrap-toggle.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#currenttable').DataTable();
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('#donetable').DataTable();
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('#currenttable').DataTable();
+        $('#currenttable').on('click', 'tr', function () {
+            var name = $('td', this).eq(1).text();
+            $('#DescModal').modal("show");
+        });
+    });
+</script>
+</body>
+</html>

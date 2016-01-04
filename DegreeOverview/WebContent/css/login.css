@@ -7,13 +7,13 @@
    #   Last Change   : 08/02/2015
    #
    ##################################################################### */
-
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
+/*
 * {
     font-family: 'Roboto', sans-serif;
 }
-
+*/
 #login-modal .modal-dialog {
     width: 350px;
 }
@@ -99,10 +99,11 @@
 .modal-body {
     position: relative;
     padding: 5px 15px 5px 15px;
+    margin: 15px 0px 10px
 }
 
 .modal-footer {
-    padding: 15px 15px 15px 15px;
+    padding: 5px 15px 5px 15px;
     text-align: left;
     border-top: 0px;
 }
@@ -125,7 +126,7 @@
     outline: none;
 }
 
-.btn-lg, .btn-group-lg>.btn {
+.btn-lg, .btn-group-lg > .btn {
     border-radius: 0px;
 }
 

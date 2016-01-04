@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Degree Overview</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="login">
+<div class="modal-dialog">
+    <div class="modal-content col-md-8 col-md-offset-2">
+        <!-- Begin # DIV Form -->
+        <div id="div-forms">
+
+            <!-- Begin # Login Form -->
+            <form id="login-form">
+                <div class="modal-body">
+                    <input id="login_username" class="form-control" type="text" placeholder="E-Mail" required>
+                    <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                    </div>
+                    <div>
+                        <a href="landing.html" type="button" class="btn btn-link">
+                            <span class="glyphicon glyphicon-arrow-left"></span>
+                        </a>
+                        <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                        <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                    </div>
+                </div>
+            </form>
+            <!-- End # Login Form -->
+
+            <!-- Begin | Lost Password Form -->
+            <form id="lost-form" style="display:none;">
+                <div class="modal-body">
+                    <input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
+                </div>
+                <div class="modal-footer">
+                    <div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                    </div>
+                    <div>
+                        <a href="landing.html" type="button" class="btn btn-link">
+                            <span class="glyphicon glyphicon-arrow-left"></span>
+                        </a>
+                        <button id="lost_login_btn" type="button" class="btn btn-link">Login</button>
+                        <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                    </div>
+                </div>
+            </form>
+            <!-- End | Lost Password Form -->
+
+            <!-- Begin | Register Form -->
+            <form id="register-form" style="display:none;">
+                <div class="modal-body">
+                    <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                    <input id="register_password" class="form-control" type="password" placeholder="Password"
+                           required>
+                </div>
+                <div class="modal-footer">
+                    <div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                    </div>
+                    <div>
+                        <a href="landing.html" type="button" class="btn btn-link">
+                            <span class="glyphicon glyphicon-arrow-left"></span>
+                        </a>
+                        <button id="register_login_btn" type="button" class="btn btn-link">Login</button>
+                        <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                    </div>
+                </div>
+            </form>
+            <!-- End | Register Form -->
+
+        </div>
+        <!-- End # DIV Form -->
+
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

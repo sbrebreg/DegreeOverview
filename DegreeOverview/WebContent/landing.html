@@ -22,94 +22,6 @@
 </head>
 <body id="top">
 
-
-<!-- Login Start
-        ================================================= -->
-
-
-<!-- BEGIN # MODAL LOGIN -->
-<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-     style="display: none;">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header" align="center">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                </button>
-            </div>
-
-            <!-- Begin # DIV Form -->
-            <div id="div-forms">
-
-                <!-- Begin # Login Form -->
-                <form id="login-form">
-                    <div class="modal-body">
-                        <input id="login_username" class="form-control" type="text" placeholder="E-Mail" required>
-                        <input id="login_password" class="form-control" type="password" placeholder="Password" required>
-
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Remember me
-                            </label>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <div>
-                            <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
-                        </div>
-                        <div>
-                            <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
-                            <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
-                        </div>
-                    </div>
-                </form>
-                <!-- End # Login Form -->
-
-                <!-- Begin | Lost Password Form -->
-                <form id="lost-form" style="display:none;">
-                    <div class="modal-body">
-                        <input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
-                    </div>
-                    <div class="modal-footer">
-                        <div>
-                            <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
-                        </div>
-                        <div>
-                            <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
-                            <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
-                        </div>
-                    </div>
-                </form>
-                <!-- End | Lost Password Form -->
-
-                <!-- Begin | Register Form -->
-                <form id="register-form" style="display:none;">
-                    <div class="modal-body">
-                        <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
-                        <input id="register_password" class="form-control" type="password" placeholder="Password"
-                               required>
-                    </div>
-                    <div class="modal-footer">
-                        <div>
-                            <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
-                        </div>
-                        <div>
-                            <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
-                            <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
-                        </div>
-                    </div>
-                </form>
-                <!-- End | Register Form -->
-
-            </div>
-            <!-- End # DIV Form -->
-
-        </div>
-    </div>
-</div>
-<!-- Login End -->
-
-
 <!-- Header Start -->
 
 <header id="home">
@@ -126,7 +38,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand page-scroll" href="#home"> <img src="img/Logo2.png" class="img-responsive"
-                                                                           alt=""></a>
+                                                                       alt=""></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -146,9 +58,9 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <ul class="nav pull-left top-menu">
-                    <li><a href="#" class="login" role="button" data-toggle="modal" data-target="#login-modal"><i
-                            class="glyphicon glyphicon-log-in"></i> Login</a>
-                    </li>
+                        <li><a href="login.html" class="login" role="button"><i
+                                class="glyphicon glyphicon-log-in"></i> Login</a>
+                        </li>
                     </ul>
                 </ul>
             </div>
@@ -171,7 +83,7 @@
 
                     <p class="animated fadeInUp delay-1s">
 
-                    <!--<p>Administrate <em>your </em>courses <em>! </em></p>-->
+                        <!--<p>Administrate <em>your </em>courses <em>! </em></p>-->
                 </div>
             </div>
         </div>
@@ -191,15 +103,16 @@
 
                         <div class="media wp2 blueicon">
 
-                            <i class=" fa fa-lightbulb-o fa-5x  "></i>
+                            <i class=" fa fa-gear fa-5x  "></i>
 
                             <div class="media-body">
                                 <h1 class="media-heading ">Course Administration</h1>
 
                                 <p>
 
-                                    Administrate your courses etc. blablabla blablaloremblablaloremblablalorem  blabla
-                                    blablalorem blablalorem
+                                    See in the course dependencies and the learning outcomes of your courses at first
+                                    sight.<br>Which course do you have to visit in order to visit the course following
+                                    up?<br>Which courses do you still need to finish your grade?
 
                                 </p>
 
@@ -212,14 +125,15 @@
 
                         <div class="media wp2 delay-05s blueicon">
 
-                            <i class=" fa fa-lightbulb-o fa-5x  "></i>
+                            <i class="fa fa-calendar fa-5x  "></i>
 
                             <div class="media-body">
                                 <h1 class="media-heading ">Individual Timetable</h1>
 
                                 <p>
-                                    See your individual timetable, export etc..blablalorem blablaloremblablaloremblab
-                                    blablalorem
+                                    See your up-to-date timetable depending on your selected courses – not only on your
+                                    PC but on your smartphone right in the moment you need the information.<br>Or export
+                                    the timetable to Excel and print it.
                                 </p>
 
                             </div>
@@ -231,14 +145,15 @@
 
                         <div class="media wp2 delay-1s blueicon">
 
-                            <i class="fa fa-lightbulb-o fa-5x  "></i>
+                            <i class="fa fa-bar-chart-o fa-5x  "></i>
 
                             <div class="media-body">
-                                <h1 class="media-heading ">Course overview</h1>
+                                <h1 class="media-heading ">ECTS overview</h1>
 
                                 <p>
-                                    Course overview Course overview overviewbla blaoverview bla
-                                    overviewl overviewoverviewoverview
+                                    You don’t know, how many ECTS you reached so far? This is history!<br> Now you can
+                                    easily see how many ECTS you have and how many you need for your grade.<br>All in
+                                    clear diagrams in your personal area.
 
                                 </p>
 
@@ -274,13 +189,12 @@
                                 <h1 class="arrow">Your personal Dashboard</h1>
 
                                 <p>
-                                    Lorem lorem lalalalaaa
+                                    See all the information you need depending your study in one dashboard! How much
+                                    ECTS have your reached so far? What courses do you have tomorrow and where? And when
+                                    do you have to submit your term paper? Which courses do you have to select for
+                                    getting your degree finished as soon as possible?
 
-                                    Lorem lorem lalalalaaaLorem lorem lalalalaaaLorem lorem lalalalaaaLorem lo
-                                    Lorem lorem lalalalaaaLorem lorem lalalalaaaLorem lorem lalalalaaa
-                                    Lorem lorem lalalalaaaLorem lorem lalalalaaa
-
-                                    Lorem lorem lalalalaaa
+                                <p>All this questions are answered in DegreeOverview on your personal dashboard!
                                 </p>
                             </li>
                         </ul>
@@ -299,7 +213,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <a  href="#" class="ignite-btn" role="button" data-toggle="modal" data-target="#login-modal">Register now</a>
+                <a href="#" class="ignite-btn" role="button" data-toggle="modal" data-target="#login-modal">Register
+                    now</a>
             </div>
         </div>
     </div>
@@ -326,12 +241,14 @@
                 <div class="light-box box-hover">
                     <h2><i class="fa fa-user"></i><span>Project supervisor</span></h2>
 
-                    <p>Prof. Dr. Philipp Brune<br> <br><a href="mailto:test1">philipp.brune@hochschule-neu-ulm.de</a></p>
+                    <p>Prof. Dr. Philipp Brune<br> <br><a href="mailto:test1">philipp.brune@hochschule-neu-ulm.de</a>
+                    </p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="light-box box-hover">
                     <h2><i class="fa fa-envelope"></i><span>Contact partner</span></h2>
+
                     <p>Rebecca Bregant<br><br><a href="mailto:test2"> rebecca.bregant@student.hs-neu-ulm.de</a></p>
                 </div>
             </div>
