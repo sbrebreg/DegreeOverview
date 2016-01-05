@@ -476,8 +476,9 @@ p {
 .p2 {
     color: #353535;
     word-spacing: 1px;
-    line-height: 25px;
+    line-height: 20px;
     font-size: 14px;
+    margin-top: 3px
 }
 
 h2 {
@@ -1115,7 +1116,9 @@ article:after,
 
 ul,
 ol {
-    list-style: none
+    list-style: square;
+    padding: 0px 16px;
+    margin: 5px 0px
 }
 
 .fa-borderblue {
