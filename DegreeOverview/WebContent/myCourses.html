@@ -24,7 +24,6 @@
     <![endif]-->
 </head>
 <body id="top" class="bodyint">
-
 <!-- Header Start -->
 
 <header id="home">
@@ -84,13 +83,23 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
-                <h4 class="modal-title">Course Details</h4>
+                <div class="row">
+                    <h1 class="modal-title col-md-6">Business Studies I</h1>
+
+                    <h1 class="modal-title pull-right"><span class="label label-success">2.0</span></h1>
+                </div>
             </div>
             <div class="modal-body">
-                <p class="p2">Business Studies I.</p>
-
-                <p class="p2">5 ECTS</p>
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Presentation:</label>
+                        <label class="col-md-2 control-label">1.3</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Written examination:</label>
+                        <label class="col-md-2 control-label">2.7</label>
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -132,18 +141,16 @@
                         <td>Tuesday 10.00-12.50</td>
                         <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
                                    type="checkbox"></td>
-                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
-                        </td>
+                        <td><a href="coursedetail.html" target="_blank"><i class="fa fa-search"></i> </a></td>
                     </tr>
                     <tr>
-                        <td>Business Studies I</td>
+                        <td>Business Studies II</td>
                         <td>Prof. Dr. Grieble</td>
                         <td>4</td>
                         <td>Monday 09.00-11.30</td>
                         <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
                                    type="checkbox"></td>
-                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
-                        </td>
+                        <td><a href="coursedetail.html" target="_blank"><i class="fa fa-search"></i> </a></td>
                     </tr>
                     <tr>
                         <td>Business Studies II</td>
@@ -153,7 +160,6 @@
                         <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
                                    type="checkbox"></td>
                         <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
-                        </td>
                     </tr>
                     <tr>
                         <td>Marketing I</td>
@@ -162,8 +168,7 @@
                         <td>Thursday 15.00-17.30</td>
                         <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
                                    type="checkbox"></td>
-                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
-                        </td>
+                        <td><a href="coursedetail.html" target="_blank"><i class="fa fa-search"></i> </a></td>
                     </tr>
                     <tr>
                         <td>Marketing II</td>
@@ -172,8 +177,7 @@
                         <td>Monday 14.00-15.15</td>
                         <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
                                    type="checkbox"></td>
-                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
-                        </td>
+                        <td><a href="coursedetail.html" target="_blank"><i class="fa fa-search"></i> </a></td>
                     </tr>
                     <tr>
                         <td>Maths I</td>
@@ -182,8 +186,7 @@
                         <td>Thursday 14.00-15.15</td>
                         <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
                                    type="checkbox"></td>
-                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
-                        </td>
+                        <td><a href="coursedetail.html" target="_blank"><i class="fa fa-search"></i> </a></td>
                     </tr>
                     </tbody>
                 </table>
@@ -198,6 +201,7 @@
                         <th>Lecturer</th>
                         <th>ECTS</th>
                         <th>Grade</th>
+                        <th></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -206,30 +210,35 @@
                         <td>Prof. Dr. Dehnert</td>
                         <td>5</td>
                         <td>1.7</td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
                     </tr>
                     <tr>
                         <td>Business Studies I</td>
                         <td>Prof. Dr. Grieble</td>
                         <td>4</td>
                         <td>2.3</td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
                     </tr>
                     <tr>
                         <td>Business Studies I</td>
                         <td>Prof. Dr. Maier</td>
                         <td>4</td>
                         <td>4.0</td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
                     </tr>
                     <tr>
                         <td>Marketing I</td>
                         <td>Prof. Gory</td>
                         <td>8</td>
                         <td>3.7</td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
                     </tr>
                     <tr>
                         <td>Marketing II</td>
                         <td>Prof. Dr. Gernold</td>
                         <td>5</td>
                         <td>3.0</td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
                     </tr>
                     </tbody>
                 </table>

@@ -2079,7 +2079,7 @@ textarea.input-lg, select[multiple].input-lg {
 
     .form-inline .control-label {
         margin-bottom: 0;
-        vertical-align: middle
+        vertical-align: middle;
     }
 
     .form-inline .radio, .form-inline .checkbox {
@@ -2103,7 +2103,7 @@ textarea.input-lg, select[multiple].input-lg {
 .form-horizontal .control-label, .form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline {
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 7px
+    padding-top: 7px;
 }
 
 .form-horizontal .radio, .form-horizontal .checkbox {
@@ -5239,7 +5239,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 
 .panel > .table, .panel > .table-responsive > .table {
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 .panel > .table:first-child, .panel > .table-responsive:first-child > .table:first-child {
