@@ -1,9 +1,232 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Degree Overview</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <!--<link href="css/login.css" rel="stylesheet">-->
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-toggle.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body><p>test</p>
+<body id="top" class="bodyint">
+
+<!-- Header Start -->
+
+<header id="home">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home"> <img src="img/Logo2.png" class="img-responsive"
+                                                           alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="index.html">Overview</a>
+                    </li>
+                    <li>
+                        <a href="allCourses.html">All Courses</a>
+                    </li>
+                    <li class="active">
+                        <a href="myCourses.html">My Courses</a>
+                    </li>
+                    <li><a data-toggle="dropdown" href="#" class="dropdown-toggle">My Profile</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="myProfile.html"><i class="fa fa-cog"></i> Profile</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i> Inbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="landing.html"><i class="fa fa-power-off"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <section>
+    </section>
+</header>
+
+<div class="container sitecontent col-md-offset-1 col-md-10">
+    <div class="row" id="caption">
+        <ol class="breadcrumb">
+            <li><a href="myCourses2.html">Your Personal Courses</a></li>
+            <li class="active">Enterpise Architecture I - Wintersemester 2015/16</li>
+        </ol>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table id="allcourses" class="table table-bordered hover" cellspacing="0" width="100%">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Grade</th>
+                    <th>Passed</th>
+                    <th>Attempt</th>
+                    <td></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>479556</td>
+                    <td>Teresia</td>
+                    <td>Campos</td>
+                    <td>2.3</td>
+                    <td><i class="fa fa-check green"></i></td>
+                    <td>1st</td>
+                    <td><a href="" target="_blank"><i class="fa fa-search"></i> </a></td>
+                </tr>
+                <tr>
+                    <td>479575</td>
+                    <td>Gonzalo</td>
+                    <td>Jester</td>
+                    <td>4.0</td>
+                    <td><i class="fa fa-check green"></i></td>
+                    <td>1st</td>
+                    <td><a href="" target="_blank"><i class="fa fa-search"></i> </a></td>
+                </tr>
+                <tr>
+                    <td>795814</td>
+                    <td>Selene</td>
+                    <td>Salmons</td>
+                    <td>1.7</td>
+                    <td><i class="fa fa-check green"></i></td>
+                    <td>2nd</td>
+                    <td><a href="" target="_blank"><i class="fa fa-search"></i> </a></td>
+                </tr>
+                <tr>
+                    <td>636657</td>
+                    <td>Eilene</td>
+                    <td>Schaner</td>
+                    <td>3.3</td>
+                    <td><i class="fa fa-check green"></i></td>
+                    <td>1st</td>
+                    <td><a href="" target="_blank"><i class="fa fa-search"></i> </a></td>
+                </tr>
+                <tr>
+                    <td>114587</td>
+                    <td>Diedre</td>
+                    <td>Feucht</td>
+                    <td>5.0</td>
+                    <td><i class="fa fa-times red"></i></td>
+                    <td>3rd</td>
+                    <td><a href="" target="_blank"><i class="fa fa-search"></i> </a></td>
+                </tr>
+                <tr>
+                    <td>966802</td>
+                    <td>Danny</td>
+                    <td>Gernold</td>
+                    <td>3.0</td>
+                    <td><i class="fa fa-check green"></i></td>
+                    <td>1st</td>
+                    <td><a href="" target="_blank"><i class="fa fa-search"></i> </a></td>
+                </tr>
+                <tr>
+                    <td>111452</td>
+                    <td>Peter</td>
+                    <td>Wright</td>
+                    <td>5.0</td>
+                    <td><i class="fa fa-times red"></i></td>
+                    <td>1st</td>
+                    <td><a href="" target="_blank"><i class="fa fa-search"></i> </a></td>
+                </tr>
+                <tr>
+                    <td>254856</td>
+                    <td>Alexander</td>
+                    <td>Miller</td>
+                    <td>5.0</td>
+                    <td><i class="fa fa-times red"></i></td>
+                    <td>2nd</td>
+                    <td><a href="" target="_blank"><i class="fa fa-search"></i> </a></td>
+                </tr>
+                <tr>
+                    <td>711852</td>
+                    <td>Glenna</td>
+                    <td>Helbing</td>
+                    <td>1.3</td>
+                    <td><i class="fa fa-check green"></i></td>
+                    <td>1st</td>
+                    <td><a href="" target="_blank"><i class="fa fa-search"></i> </a></td>
+                </tr>
+                <tr>
+                    <td>897465</td>
+                    <td>Vergie</td>
+                    <td>Moen</td>
+                    <td>1.7</td>
+                    <td><i class="fa fa-check green"></i></td>
+                    <td>1st</td>
+                    <td><a href="" target="_blank"><i class="fa fa-search"></i> </a></td>
+                </tr>
+                <tr>
+                    <td>785968</td>
+                    <td>Kary</td>
+                    <td>Olland</td>
+                    <td>2.3</td>
+                    <td><i class="fa fa-check green"></i></td>
+                    <td>2nd</td>
+                    <td><a href="" target="_blank"><i class="fa fa-search"></i> </a></td>
+                </tr>
+                <tr>
+                    <td>714852</td>
+                    <td>Martin</td>
+                    <td>Iyolo</td>
+                    <td>5.0</td>
+                    <td><i class="fa fa-times red"></i></td>
+                    <td>1st</td>
+                    <td><a href="" target="_blank"><i class="fa fa-search"></i> </a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/dataTables.bootstrap.min.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script srC="js/bootstrap-toggle.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#allcourses').DataTable();
+    });
+</script>
 </body>
 </html>

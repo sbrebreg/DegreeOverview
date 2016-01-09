@@ -53,9 +53,9 @@
                         <a href="index.html">Overview</a>
                     </li>
                     <li>
-                        <a href="allCourses.html" class="active">All Courses</a>
+                        <a href="allCourses.html">All Courses</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="myCourses.html">My Courses</a>
                     </li>
                     <li><a data-toggle="dropdown" href="#" class="dropdown-toggle">My Profile</a>
@@ -245,6 +245,13 @@
             </div>
         </div>
     </div>
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <div class="col-md-4">
+                <button id="refresh" type="button" class="btn btn-primary"><i class="fa fa-refresh"></i></button>
+            </div>
+        </div>
+    </form>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -255,12 +262,17 @@
 <script srC="js/bootstrap-toggle.min.js"></script>
 
 <script>
+    $(function () {
+        $('#toggle-two').bootstrapToggle({
+            on: 'Enabled',
+            off: 'Disabled'
+        });
+    })
+</script>
+<script>
     $(document).ready(function () {
         $('#currenttable').DataTable();
     });
-</script>
-
-<script>
     $(document).ready(function () {
         $('#donetable').DataTable();
     });
@@ -271,6 +283,27 @@
         $('#currenttable').on('click', 'tr', function () {
             var name = $('td', this).eq(1).text();
             $('#DescModal').modal("show");
+        });
+
+        var table = $('#currenttable').DataTable();
+
+        <!--$('#currenttable tbody').on( 'click', 'tr', function () {
+            if ( $(this).hasClass('checked') ) {
+                $(this).removeClass('checked');
+            }
+            else {
+                table.$('td.checked').removeClass('checked');
+                $(this).addClass('checked');
+            }
+        } );-->
+
+        $('#currenttable tbody').click('input', function () {
+            $(this).addClass('checked').siblings().removeClass('checked');
+
+        });
+
+        $('#refresh').click(function () {
+            table.row('.checked').remove().draw(false);
         });
     });
 </script>
