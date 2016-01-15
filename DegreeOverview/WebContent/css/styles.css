@@ -71,7 +71,7 @@ body {
 
 /* Background Internal Site Content*/
 .bodyint {
-    background-image: url('../img/banner4.jpg');
+    background-image: url('../img/banner3.jpg');
     background-size: cover
 }
 
@@ -843,10 +843,13 @@ h1.arrow {
 /* ==========================================================================
 Sitecontent
 ========================================================================== */
+.degree {
+    background-color: #353535;
+    opacity: 0.3;
+}
 
 .sitecontent {
-    background-color: #ffffff;
-    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.99);
     min-height: 600px;
     padding-bottom: 20px
 }

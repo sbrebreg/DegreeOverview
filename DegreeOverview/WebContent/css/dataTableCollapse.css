@@ -4,7 +4,7 @@ div#example_filter {
 
 td {
     height: 32px;
-    padding: 0px 0px 0px 20px !important;
+    padding: 5px 0px 0px 20px !important;
     text-align: left;
     border-bottom: 1px solid #d0d0d0;
     vertical-align: middle;

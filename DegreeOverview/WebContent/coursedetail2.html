@@ -51,10 +51,10 @@
                     <li>
                         <a href="index.html">Overview</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="allCourses.html">All Courses</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="myCourses.html">My Courses</a>
                     </li>
                     <li><a data-toggle="dropdown" href="#" class="dropdown-toggle">My Profile</a>
@@ -76,17 +76,122 @@
     <section>
     </section>
 </header>
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="row col-md-offset-1">
+                    <h1 class="modal-title">Participants in Winter term 2015/16</h1>
+                </div>
+                <div class="row col-md-offset-1">
+                    <span>Number of students who are registered for this course: 87</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <table id="allcourses" class="table table-bordered hover" cellspacing="0" width="100%">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Attempt</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>479556</td>
+                        <td>Teresia</td>
+                        <td>Campos</td>
+                        <td>1st</td>
+                    </tr>
+                    <tr>
+                        <td>479575</td>
+                        <td>Gonzalo</td>
+                        <td>Jester</td>
+                        <td>1st</td>
+                    </tr>
+                    <tr>
+                        <td>795814</td>
+                        <td>Selene</td>
+                        <td>Salmons</td>
+                        <td>2nd</td>
+                    </tr>
+                    <tr>
+                        <td>636657</td>
+                        <td>Eilene</td>
+                        <td>Schaner</td>
+                        <td>1st</td>
+                    </tr>
+                    <tr>
+                        <td>114587</td>
+                        <td>Diedre</td>
+                        <td>Feucht</td>
+                        <td>3rd</td>
+                    </tr>
+                    <tr>
+                        <td>966802</td>
+                        <td>Danny</td>
+                        <td>Gernold</td>
+                        <td>1st</td>
+                    </tr>
+                    <tr>
+                        <td>111452</td>
+                        <td>Peter</td>
+                        <td>Wright</td>
+                        <td>1st</td>
+                    </tr>
+                    <tr>
+                        <td>254856</td>
+                        <td>Alexander</td>
+                        <td>Miller</td>
+                        <td>2nd</td>
+                    </tr>
+                    <tr>
+                        <td>711852</td>
+                        <td>Glenna</td>
+                        <td>Helbing</td>
+                        <td>1st</td>
+                    </tr>
+                    <tr>
+                        <td>897465</td>
+                        <td>Vergie</td>
+                        <td>Moen</td>
+                        <td>1st</td>
+                    </tr>
+                    <tr>
+                        <td>785968</td>
+                        <td>Kary</td>
+                        <td>Olland</td>
+                        <td>2nd</td>
+                    </tr>
+                    <tr>
+                        <td>714852</td>
+                        <td>Martin</td>
+                        <td>Iyolo</td>
+                        <td>1st</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
 <div class="container sitecontent col-md-offset-1 col-md-10">
     <div class="row">
         <ol class="breadcrumb">
-            <li><a href="allCourses.html.html">All Courses</a></li>
-            <li class="active">Business Studies II</li>
+            <li><a href="myCourses2.html">My Courses</a></li>
+            <li class="active">Project Management</li>
         </ol>
     </div>
     <div class="row" id="caption">
         <div class="col-md-4">
-            <h1>Business Studies II</h1>
+            <h1>Project Management</h1>
         </div>
     </div>
     <div class="row col-md-7">
@@ -94,11 +199,11 @@
         <table class="table table-bordered">
             <tr>
                 <td class="detail">Duration</td>
-                <td>1 Semester</td>
+                <td contenteditable>1 Semester</td>
             </tr>
             <tr>
                 <td class="detail">Lecturer</td>
-                <td>Prof. Dr. Poll</td>
+                <td>Prof. Dr. Miller</td>
             </tr>
             <tr>
                 <td class="detail">ECTS</td>
@@ -147,6 +252,16 @@
                 </td>
             </tr>
         </table>
+
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <div class="col-md-4">
+                    <button id="refresh" type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#myModal"><i class="fa fa-list"></i> View Participants
+                    </button>
+                </div>
+            </div>
+        </form>
     </div>
     <div class="container bg-success col-md-4 col-md-offset-1">
         <div class="panel panel-default col-xs-12 col-xs-offset-0 nopadding">
