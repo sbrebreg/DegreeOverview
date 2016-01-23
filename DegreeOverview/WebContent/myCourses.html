@@ -39,7 +39,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#home"> <img src="img/Logo2.png" class="img-responsive"
+                <a class="navbar-brand" href="index.html"> <img src="img/Logo2.png" class="img-responsive"
                                                            alt=""></a>
             </div>
 
@@ -58,13 +58,11 @@
                     <li class="active">
                         <a href="myCourses.html">My Courses</a>
                     </li>
-                    <li><a data-toggle="dropdown" href="#" class="dropdown-toggle">My Profile</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="myProfile.html"><i class="fa fa-cog"></i> Profile</a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i> Inbox</a></li>
-                            <li class="divider"></li>
-                            <li><a href="landing.html"><i class="fa fa-power-off"></i> Logout</a></li>
-                        </ul>
+                    <li>
+                        <a href="myProfile.html">My Profile</a>
+                    </li>
+                    <li>
+                        <a href="landing.html"><i class="fa fa-sign-out"></i></a>
                     </li>
                 </ul>
             </div>
@@ -84,22 +82,66 @@
         <div class="modal-content">
             <div class="modal-header">
                 <div class="row">
-                    <h1 class="modal-title col-md-6">Business Studies I</h1>
+                    <h1 class="modal-title col-md-6">Marketing I</h1>
 
-                    <h1 class="modal-title pull-right"><span class="label label-success">2.0</span></h1>
+                    <h1 class="modal-title pull-right"><span class="label label-success">3.7</span></h1>
                 </div>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal" role="form">
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">Presentation:</label>
-                        <label class="col-md-2 control-label">1.3</label>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">Written examination:</label>
-                        <label class="col-md-2 control-label">2.7</label>
-                    </div>
-                </form>
+                <table class="table">
+                    <tr>
+                        <td class="detail">Results</td>
+                        <td>Presentation: 4.0<br>Written examination: 3.3</td>
+                    </tr>
+                    <tr>
+                        <td class="detail">Lecturer</td>
+                        <td>Prof. Dr. Poll</td>
+                    </tr>
+                    <tr>
+                        <td class="detail">ECTS</td>
+                        <td>5</td>
+                    </tr>
+
+                    <tr>
+                        <td class="detail">Learning Objectives</td>
+                        <td>
+                            <ul>
+                                <h3>Presentation:</h3>
+                                <li><p class="p2">Demonstrate an ability to apply general management know-how in
+                                    practical
+                                    business situations.</p></li>
+                                <li><p class="p2">
+                                    Be able to communicate effectively and convincingly on a factual supported basis,
+                                    both
+                                    orally
+                                    and in writing.</p></li>
+                                <hr class="divide">
+                                <h3>Written examination:</h3>
+                                <li><p class="p2">Draw upon specialist know-how, deploying concepts and sources
+                                    incisively
+                                    and with sensitivity.</p></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="detail">Content</td>
+                        <td>
+                            <ul>
+                                <li><p class="p2">business studies as a field of science (business studies relative to
+                                    the system of sciences, scientific statements of business studies)</p></li>
+                                <li><p class="p2">history of business studies and selected approaches of business
+                                    studies</p></li>
+                                <li><p class="p2">basic terms and principles of business studies (operation,
+                                    shareholder and stakeholder, goods and services, business
+                                    activities / business principles, goods and markets)</p></li>
+                                <li><p class="p2">classification an
+                                    d types of businesses (amongst others,
+                                    classification according to profit orientation, phase of life, industry,
+                                    size and ownership)</p></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -141,16 +183,16 @@
                         <td>Tuesday 10.00-12.50</td>
                         <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
                                    type="checkbox"></td>
-                        <td><a href="coursedetail.html" target="_blank"><i class="fa fa-search"></i> </a></td>
+                        <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
                     </tr>
                     <tr>
-                        <td>Business Studies II</td>
+                        <td>Business Studies I</td>
                         <td>Prof. Dr. Grieble</td>
                         <td>4</td>
                         <td>Monday 09.00-11.30</td>
                         <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
                                    type="checkbox"></td>
-                        <td><a href="coursedetail.html" target="_blank"><i class="fa fa-search"></i> </a></td>
+                        <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
                     </tr>
                     <tr>
                         <td>Business Studies II</td>
@@ -159,7 +201,7 @@
                         <td>Friday 08.30-11.30</td>
                         <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
                                    type="checkbox"></td>
-                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-info"></i> </a>
                     </tr>
                     <tr>
                         <td>Marketing I</td>
@@ -168,7 +210,7 @@
                         <td>Thursday 15.00-17.30</td>
                         <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
                                    type="checkbox"></td>
-                        <td><a href="coursedetail.html" target="_blank"><i class="fa fa-search"></i> </a></td>
+                        <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
                     </tr>
                     <tr>
                         <td>Marketing II</td>
@@ -177,7 +219,7 @@
                         <td>Monday 14.00-15.15</td>
                         <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
                                    type="checkbox"></td>
-                        <td><a href="coursedetail.html" target="_blank"><i class="fa fa-search"></i> </a></td>
+                        <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
                     </tr>
                     <tr>
                         <td>Maths I</td>
@@ -186,7 +228,7 @@
                         <td>Thursday 14.00-15.15</td>
                         <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
                                    type="checkbox"></td>
-                        <td><a href="coursedetail.html" target="_blank"><i class="fa fa-search"></i> </a></td>
+                        <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
                     </tr>
                     </tbody>
                 </table>
@@ -219,20 +261,6 @@
                         <td>Prof. Dr. Dehnert</td>
                         <td>5</td>
                         <td>1.7</td>
-                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
-                    </tr>
-                    <tr>
-                        <td>Business Studies I</td>
-                        <td>Prof. Dr. Grieble</td>
-                        <td>4</td>
-                        <td>2.3</td>
-                        <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
-                    </tr>
-                    <tr>
-                        <td>Business Studies I</td>
-                        <td>Prof. Dr. Maier</td>
-                        <td>4</td>
-                        <td>4.0</td>
                         <td><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i> </a>
                     </tr>
                     <tr>

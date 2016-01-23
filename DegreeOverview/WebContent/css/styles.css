@@ -63,6 +63,11 @@ body {
     padding-top: 70px;
 }
 
+/* 100% height*/
+html, body {
+    height: 100%;
+}
+
 /*Login Background image*/
 .login {
     background-image: url('../img/banner4.jpg');
@@ -850,7 +855,7 @@ Sitecontent
 
 .sitecontent {
     background-color: rgba(255, 255, 255, 0.99);
-    min-height: 600px;
+    min-height: 100%;
     padding-bottom: 20px
 }
 
