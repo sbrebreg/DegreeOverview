@@ -57,23 +57,6 @@
     transition: all ease-in-out 500ms;
 }
 
-#icon-login-msg.success,
-#icon-lost-msg.success,
-#icon-register-msg.success {
-    background-color: #68c3a3 !important;
-}
-
-#icon-login-msg.error,
-#icon-lost-msg.error,
-#icon-register-msg.error {
-    background-color: #eb575b !important;
-}
-
-#img_logo {
-    max-height: 100px;
-    max-width: 100px;
-}
-
 /* #########################################
    #    override the bootstrap configs     #
    ######################################### */

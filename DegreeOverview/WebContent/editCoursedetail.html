@@ -189,69 +189,49 @@
     </div>
     <div class="row" id="caption">
         <div class="col-md-4">
-            <h1>Project Management</h1>
+            <h1><input type="text" value="Project Management"></h1>
         </div>
     </div>
     <div class="row col-md-12">
         <h5 class="col-md-12">Course Details</h5>
 
         <div class="col-md-7">
-            <table class="table table-bordered">
+            <table class="table">
                 <tr>
                     <td class="detail">Duration</td>
-                    <td>1 Semester</td>
+                    <td><input type="text" value="1 Semester"></td>
                 </tr>
                 <tr>
                     <td class="detail">Lecturer</td>
-                    <td>Prof. Dr. Maier</td>
+                    <td><input type="text" value="Prof. Dr. Maier"></td>
                 </tr>
                 <tr>
                     <td class="detail">ECTS</td>
-                    <td>5</td>
+                    <td><input type="text" value="5"></td>
                 </tr>
                 <tr>
                     <td class="detail">Learning Objectives</td>
                     <td>
-                        <ul>
-                            <h3>Presentation:</h3>
-                            <li><p class="p2">Demonstrate an ability to apply general management know-how in practical
-                                business situations.</p></li>
-                            <li><p class="p2">
-                                Be able to communicate effectively and convincingly on a factual supported basis, both
-                                orally
-                                and in writing.</p></li>
-                            <hr class="divide">
-                            <h3>Written examination:</h3>
-                            <li><p class="p2">Draw upon specialist know-how, deploying concepts and sources incisively
-                                and with sensitivity.</p></li>
-                        </ul>
+                        <textarea class="col-md-12" rows="8">Presentation:&#13;&#10;- Demonstrate an ability to apply
+                            general management know-how in practical business situations.&#13;&#10;- Be able to
+                            communicate effectively and convincingly on a factual supported basis, bothorally and in
+                            writing.&#13;&#10;&#13;&#10;Written examination:&#13;&#10;- Draw upon specialist know-how,
+                            deploying concepts and sources incisively and with sensitivity.</textarea>
                     </td>
                 </tr>
                 <tr>
                     <td class="detail">Content</td>
                     <td>
-                        <ul>
-                            <li><p class="p2">business studies as a field of science (business studies relative to
-                                the system of sciences, scientific statements of business studies)</p></li>
-                            <li><p class="p2">history of business studies and selected approaches of business
-                                studies</p></li>
-                            <li><p class="p2">basic terms and principles of business studies (operation,
-                                shareholder and stakeholder, goods and services, business
-                                activities / business principles, goods and markets)</p></li>
-                            <li><p class="p2">classification an
-                                d types of businesses (amongst others,
-                                classification according to profit orientation, phase of life, industry,
-                                size and ownership)</p></li>
-                        </ul>
+                        <textarea class="col-md-12" rows="4">- business studies as a field of science (business studies
+                            relative to the system of sciences, scientific statements of business studies)&#13;&#10;-
+                            history of business studies and selected approaches of business studies</textarea>
                     </td>
                 </tr>
                 <tr>
                     <td class="detail">Course work item</td>
                     <td>
-                        <ul>
-                            <li><p class="p2">Presentation</p></li>
-                            <li><p class="p2">Written examination: 120min</p></li>
-                        </ul>
+                        <textarea class="col-md-12" rows="2">- Presentation&#13;&#10;- Written examination:
+                            120min</textarea>
                     </td>
                 </tr>
             </table>
@@ -261,30 +241,30 @@
                 <div class="panel-heading"><h5>Required Courses</h5></div>
                 <div class="panel-body">
                     <p class="p2">In order to participate you need to have completed the following courses:</p>
-                    <ul>
-                        <li><a href="coursedetail.html">Business Studies I</a></li>
-                    </ul>
+                    <input type="text" value="Business Studies I">
+                    <input type="text" value="">
+                    <input type="text" value="">
                 </div>
             </div>
             <div class="panel panel-default col-xs-12 col-xs-offset-0 nopadding">
                 <div class="panel-heading"><h5>Recommended Courses</h5></div>
                 <div class="panel-body">
                     <p class="p2">Students who participated in this course often elected one of the following:</p>
-                    <ul>
-                        <li><a href="coursedetail.html">Business Studies III</a></li>
-                        <li><a href="coursedetail.html">Statistics</a></li>
-                    </ul>
+                    <input type="text" value="Business Studies III">
+                    <input type="text" value="Statistics">
+                    <input type="text" value="">
                 </div>
             </div>
         </div>
     </div>
     <div class="col-md-4">
-        <a href="editCoursedetail.html">
-            <button type="submit" class="btn btn-primary"><i class="fa fa-edit"></i> Edit content</button>
+        <a href="coursedetail2.html">
+            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save Changes</button>
         </a>
-        <button id="refresh" type="button" class="btn btn-primary" data-toggle="modal"
-                data-target="#myModal"><i class="fa fa-list"></i> View Participants
-        </button>
+        <span></span>
+        <a href="coursedetail2.html">
+            <button type="submit" class="btn btn-default">Cancel</button>
+        </a>
     </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

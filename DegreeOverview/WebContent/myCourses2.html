@@ -65,7 +65,7 @@
                         <a href="myProfile.html">My Profile</a>
                     </li>
                     <li>
-                        <a href="landing.html"><i class="fa fa-sign-out"></i></a>
+                        <a href="landing.html"><i class="fa fa-lg fa-sign-out"></i></a>
                     </li>
                 </ul>
             </div>
@@ -78,7 +78,22 @@
     <section>
     </section>
 </header>
+<div id="timetable" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3>Your Timetable was successfully generated.</h3>
+                <a href="index.html"><i class="fa fa-arrow-right"></i> Check it out</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
 <div class="container sitecontent col-md-offset-1 col-md-10">
     <div class="row" id="caption">
         <div class="col-md-4">
@@ -100,49 +115,44 @@
                         <th>ECTS</th>
                         <th>Time</th>
                         <th>Location</th>
-                        <th></th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>Project Management</td>
+                        <td><a href="coursedetail2.html">Project Management</a></td>
                         <td>47</td>
                         <td>5</td>
                         <td>Tuesday 10.00-12.50</td>
                         <td>ONE 17, Room 3-EDV</td>
-                        <td><a href="coursedetail2.html" target="_blank"><i class="fa fa-info"></i> </a></td>
                     </tr>
                     <tr>
-                        <td>Enterprise Architecture</td>
+                        <td><a href="coursedetail2.html">Enterprise Architecture</a></td>
                         <td>84</td>
                         <td>4</td>
                         <td>Monday 09.00-11.30</td>
                         <td>TWO 10, Room 5</td>
-                        <td><a href="coursedetail2.html" target="_blank"><i class="fa fa-info"></i> </a></td>
                     </tr>
                     <tr>
-                        <td>Usability</td>
+                        <td><a href="coursedetail2.html">Usability</a></td>
                         <td>70</td>
                         <td>4</td>
                         <td>Friday 08.30-11.30</td>
                         <td>NINE 5, Room 17</td>
-                        <td><a href="coursedetail2.html" data-toggle="modal" data-target="#myModal"><i
-                                class="fa fa-info"></i> </a>
                     </tr>
                     <tr>
-                        <td>Web Development</td>
+                        <td><a href="coursedetail2.html">Web Development</a></td>
                         <td>72</td>
                         <td>8</td>
                         <td>Thursday 15.00-17.30</td>
                         <td>SEVEN 3, Room 23</td>
-                        <td><a href="coursedetail2.html" target="_blank"><i class="fa fa-info"></i> </a></td>
                     </tr>
                     </tbody>
                 </table>
                 <form class="form-horizontal" role="form">
                     <div class="form-group">
                         <div class="col-md-4">
-                            <button id="refresh" type="button" class="btn btn-primary"><i class="fa fa-share"></i>
+                            <button id="refresh" type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#timetable"><i class="fa fa-share"></i>
                                 Generate Timetable
                             </button>
                         </div>
@@ -166,84 +176,84 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Project Management</td>
+                                <td><a href="coursedetail2.html">Project Management</a></td>
                                 <td>Winter term 2015/16</td>
                                 <td>109</td>
                                 <td>Ø 2.7</td>
                                 <td><a href="results.html"><i class="fa fa-search"></i> </a>
                             </tr>
                             <tr>
-                                <td>Project Management</td>
+                                <td><a href="coursedetail2.html">Project Management</a></td>
                                 <td>Summer term 2015</td>
                                 <td>95</td>
                                 <td>Ø 2.2</td>
                                 <td><a href="results.html"><i class="fa fa-search"></i> </a>
                             </tr>
                             <tr>
-                                <td>Project Management</td>
+                                <td><a href="coursedetail2.html">Project Management</a></td>
                                 <td>Winter term 2014/15</td>
                                 <td>110</td>
                                 <td>Ø 2.6</td>
                                 <td><a href="results.html"><i class="fa fa-search"></i> </a>
                             </tr>
                             <tr>
-                                <td>Enterprise Architecture I</td>
+                                <td><a href="coursedetail2.html">Enterprise Architecture I</a></td>
                                 <td>Winter term 2015/16</td>
                                 <td>73</td>
                                 <td>Ø 2.0</td>
                                 <td><a href="results.html"><i class="fa fa-search"></i> </a>
                             </tr>
                             <tr>
-                                <td>Enterprise Architecture I</td>
+                                <td><a href="coursedetail2.html">Enterprise Architecture I</a></td>
                                 <td>Summer term 2015</td>
                                 <td>65</td>
                                 <td>Ø 1.7</td>
                                 <td><a href="results.html"><i class="fa fa-search"></i> </a>
                             </tr>
                             <tr>
-                                <td>Enterprise Architecture I</td>
+                                <td><a href="coursedetail2.html">Enterprise Architecture I</a></td>
                                 <td>Winter term 2014/15</td>
                                 <td>60</td>
                                 <td>Ø 2.3</td>
                                 <td><a href="results.html"><i class="fa fa-search"></i> </a>
                             </tr>
                             <tr>
-                                <td>Usability</td>
+                                <td><a href="coursedetail2.html">Usability</a></td>
                                 <td>Winter term 2015/16</td>
                                 <td>73</td>
                                 <td>Ø 3.0</td>
                                 <td><a href="results.html"><i class="fa fa-search"></i> </a>
                             </tr>
                             <tr>
-                                <td>Usability</td>
+                                <td><a href="coursedetail2.html">Usability</a></td>
                                 <td>Summer term 2015</td>
                                 <td>65</td>
                                 <td>Ø 2.7</td>
                                 <td><a href="results.html"><i class="fa fa-search"></i> </a>
                             </tr>
                             <tr>
-                                <td>Usability</td>
+                                <td><a href="coursedetail2.html">Usability</a></td>
                                 <td>Winter term 2014/15</td>
                                 <td>60</td>
                                 <td>Ø 2.0</td>
                                 <td><a href="results.html"><i class="fa fa-search"></i> </a>
                             </tr>
                             <tr>
-                                <td>Web Development</td>
+                                <td><a href="coursedetail2.html">Web Development</a></td>
                                 <td>Winter term 2015/16</td>
                                 <td>73</td>
                                 <td>Ø 2.5</td>
                                 <td><a href="results.html"><i class="fa fa-search"></i> </a>
                             </tr>
                             <tr>
-                                <td>Web Development</td>
+                                <td><a href="coursedetail2.html">Web Development</a></td>
                                 <td>Summer term 2015</td>
                                 <td>65</td>
                                 <td>Ø 3.3</td>
                                 <td><a href="results.html"><i class="fa fa-search"></i> </a>
                             </tr>
                             <tr>
-                                <td>Web Development</td>
+                                <td><a href="coursedetail2.html">Web Development</a></td>
                                 <td>Winter term 2014/15</td>
                                 <td>60</td>
                                 <td>Ø 3.0</td>

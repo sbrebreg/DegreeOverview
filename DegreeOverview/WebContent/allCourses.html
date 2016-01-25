@@ -64,7 +64,7 @@
                         <a href="myProfile.html">My Profile</a>
                     </li>
                     <li>
-                        <a href="landing.html"><i class="fa fa-sign-out"></i></a>
+                        <a href="landing.html"><i class="fa fa-lg fa-sign-out"></i></a>
                     </li>
                 </ul>
             </div>
@@ -77,6 +77,35 @@
     <section>
     </section>
 </header>
+
+<div class="modal fade modalpos" id="regModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                Are you sure you want to join this course?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modalpos" id="unregModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                Are you sure you want to leave this course?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="container sitecontent col-md-offset-1 col-md-10">
     <div class="row" id="caption">
@@ -93,108 +122,113 @@
                     <th>Lecturer</th>
                     <th>ECTS</th>
                     <th>Time</th>
+                    <th>Location</th>
                     <th>Registered</th>
-                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>Project Management</td>
-                    <td>Prof. Dr. Dehnert</td>
+                    <td><a href="coursedetail.html">Project Management</a></td>
+                    <td>Prof. Dr. Miller</td>
                     <td>5</td>
                     <td>Tuesday 10.00-12.50</td>
+                    <td>SEVEN 3, Room 23</td>
                     <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
                                type="checkbox"></td>
-                    <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
                 </tr>
                 <tr>
-                    <td>Business Studies I</td>
+                    <td><a href="coursedetail.html">Business Studies I</a></td>
                     <td>Prof. Dr. Grieble</td>
                     <td>4</td>
                     <td>Monday 09.00-11.30</td>
-                    <td><input data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini" type="checkbox"></td>
-                    <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
+                    <td>SIX 13, Room 4</td>
+                    <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
+                               type="checkbox"></td>
                 </tr>
                 <tr>
-                    <td>Business Studies II</td>
+                    <td><a href="coursedetail.html">Business Studies II</a></td>
                     <td>Prof. Dr. Maier</td>
                     <td>4</td>
                     <td>Friday 08.30-11.30</td>
+                    <td>NINE 8, Room 5</td>
                     <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
                                type="checkbox"></td>
-                    <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
                 </tr>
                 <tr>
-                    <td>Marketing I</td>
+                    <td><a href="coursedetail.html">Marketing I</a></td>
                     <td>Prof. Gory</td>
                     <td>8</td>
                     <td>Thursday 15.00-17.30</td>
+                    <td>FOUR 7, Room 4</td>
                     <td>Completed <i class="fa fa-check-square-o"></i></td>
-                    <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
                 </tr>
                 <tr>
-                    <td>Marketing II</td>
+                    <td><a href="coursedetail.html">Marketing II</a></td>
                     <td>Prof. Dr. Gernold</td>
                     <td>5</td>
                     <td>Monday 14.00-15.15</td>
-                    <td>Completed <i class="fa fa-check-square-o"></i></td>
-                    <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
+                    <td>ONE 13, Room 17</td>
+                    <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
+                               type="checkbox"></td>
                 </tr>
                 <tr>
-                    <td>Maths I</td>
+                    <td><a href="coursedetail.html">Maths I</a></td>
                     <td>Prof. Dr. Gernold</td>
                     <td>5</td>
                     <td>Thursday 14.00-15.15</td>
-                    <td>Completed <i class="fa fa-check-square-o"></i></td>
-                    <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
+                    <td>ONE 3, Room 22</td>
+                    <td><input checked data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
+                               type="checkbox"></td>
                 </tr>
                 <tr>
-                    <td>Maths II</td>
+                    <td><a href="coursedetail.html">Maths II</a></td>
                     <td>Prof. Dr. Gernold</td>
                     <td>5</td>
                     <td>Thursday 15.30-17.00</td>
-                    <td><input data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini" type="checkbox"></td>
-                    <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
+                    <td>EIGHT 11, Room 31</td>
+                    <td><a href="coursedetail.html" class="btn btn-default btn-xs" data-toggle="tooltip"
+                           data-placement="top" title="Check the required courses">Disabled</a></td>
                 </tr>
                 <tr>
-                    <td>Physics</td>
+                    <td><a href="coursedetail.html">Physics</a></td>
                     <td>Prof. Dr. Howie</td>
                     <td>5</td>
                     <td>Friday 09.00-10.30</td>
+                    <td>SEVEN 5, Room 5</td>
                     <td><input data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini" type="checkbox"></td>
-                    <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
                 </tr>
                 <tr>
-                    <td>Design</td>
+                    <td><a href="coursedetail.html">Design</a></td>
                     <td>Prof. Dr. Laurence</td>
                     <td>5</td>
                     <td>Friday 10.00-12.30</td>
+                    <td>SEVEN 9, Room 11</td>
                     <td><input data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini" type="checkbox"></td>
-                    <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
                 </tr>
                 <tr>
-                    <td>Interaction Design</td>
+                    <td><a href="coursedetail.html">Interaction Design</a></td>
                     <td>Prof. Dr. Laurence</td>
                     <td>4</td>
                     <td>Tuesday 11.00-12.30</td>
+                    <td>NINE 3, Room 3</td>
                     <td><input data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini" type="checkbox"></td>
-                    <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
                 </tr>
                 <tr>
-                    <td>Human Computer Interaction</td>
+                    <td><a href="coursedetail.html">Human Computer Interaction</a></td>
                     <td>Prof. Dr. Poll</td>
                     <td>4</td>
                     <td>Wednesday 15.00-16.30</td>
+                    <td>TWO 3, Room 14</td>
                     <td><input data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini" type="checkbox"></td>
-                    <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
                 </tr>
                 <tr>
-                    <td>Architecture</td>
+                    <td><a href="coursedetail.html">Architecture</a></td>
                     <td>Prof. Dr. Russell</td>
                     <td>7</td>
                     <td>Wednesday 19.00-20.30</td>
-                    <td><input data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini" type="checkbox"></td>
-                    <td><a href="coursedetail.html" target="_blank"><i class="fa fa-info"></i> </a></td>
+                    <td>THREE 6, Room 7</td>
+                    <td><input id="reg" data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini"
+                               type="checkbox"></td>
                 </tr>
                 </tbody>
             </table>
@@ -212,6 +246,19 @@
 <script>
     $(document).ready(function () {
         $('#allcourses').DataTable();
+    });
+
+    $('input[type="checkbox"]').on('change', function (e) {
+        if (e.target.checked) {
+            $('#regModal').modal();
+        }
+        else {
+            $('#unregModal').modal()
+        }
+    });
+
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
     });
 </script>
 </body>

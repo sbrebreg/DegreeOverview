@@ -61,7 +61,7 @@
                         <a href="myProfile.html">My Profile</a>
                     </li>
                     <li>
-                        <a href="landing.html"><i class="fa fa-sign-out"></i></a>
+                        <a href="landing.html"><i class="fa fa-lg fa-sign-out"></i></a>
                     </li>
                 </ul>
             </div>
@@ -69,8 +69,6 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-
     <section>
     </section>
 </header>
@@ -82,8 +80,20 @@
     </div>
     <hr>
     <h3>My timetable in WiSe 2015/16</h3>
-    <img class="col-md-8" src="img/TimetableDummy.PNG">
-    <img class="col-md-3 col-md-offset-1" src="img/achievedects.JPG">
+
+    <div id="indextime" class="row">
+        <img class="col-md-8" src="img/TimetableDummy.PNG">
+        <img id="indexects" class="col-md-3" src="img/achievedects.JPG">
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <a id="refresh" type="button" class="btn btn-primary"
+               onclick="open(this.href, this.target, 'width=800, height=600, top=200, left=250'); return false;"
+               href="files/Timetable.pdf" target="_blank"><i class="fa fa-share"></i>
+                Export Timetable
+            </a>
+        </div>
+    </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

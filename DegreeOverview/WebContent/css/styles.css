@@ -83,7 +83,6 @@ html, body {
 .detail {
     font-weight: bold;
 }
-
 /* ==========================================================================
 Links
 ========================================================================== */
@@ -690,7 +689,7 @@ Hero
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 65px 0 300px 0;
+    padding: 150px 0 300px 0;
     height: auto;
 }
 
@@ -857,6 +856,39 @@ Sitecontent
     background-color: rgba(255, 255, 255, 0.99);
     min-height: 100%;
     padding-bottom: 20px
+}
+
+#indexects {
+    margin-left: 50px
+}
+
+#indextime {
+    margin-bottom: 20px
+}
+
+#tableno {
+    margin: 0px
+}
+
+table a {
+    display: block;
+}
+
+#grade {
+    color: #666666;
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 16px
+}
+
+.nobold {
+    font-weight: normal;
+}
+
+.modalpos {
+    text-align: center;
+    top: 30%
 }
 
 #caption {
@@ -1085,9 +1117,6 @@ ul.slides li {
 /* ==========================================================================
 Waypoints
 ========================================================================== */
-.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7 .wp8 {
-    visibility: hidden;
-}
 
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight {
     visibility: visible;
