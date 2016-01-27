@@ -83,6 +83,7 @@ html, body {
 .detail {
     font-weight: bold;
 }
+
 /* ==========================================================================
 Links
 ========================================================================== */
@@ -852,10 +853,15 @@ Sitecontent
     opacity: 0.3;
 }
 
+.indextext {
+    color: #353535;
+    font-weight: bold;
+}
+
 .sitecontent {
     background-color: rgba(255, 255, 255, 0.99);
     min-height: 100%;
-    padding-bottom: 20px
+    padding-bottom: 20px;
 }
 
 #indexects {
@@ -908,6 +914,11 @@ table a {
 /* ==========================================================================
 Features
 ========================================================================== */
+#wrap2 {
+    margin-top: 0px;
+    text-align: center
+}
+
 .features-wrapper, .team-wrapper {
     margin: 70px 0 0;
 }
